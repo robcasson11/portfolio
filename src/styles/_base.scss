@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 38px;
+  @include font;
+}
+
+.page-body {
+  min-height: 100vh;
+  min-width: 100vw;
+  @include flexCenter;
+}

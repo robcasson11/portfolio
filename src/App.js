@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./app.css";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/layout";
+import About from "./components/about";
+import NoPage from "./components/noPage";
+import sites from "./data/sites_data";
+import Card from "./components/card";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<About />} />
+        {sites.map((site) => {
+          return (
+            <Route
+              path={site.path}
+              element={
+                <Card
+                  title={site.title}
+                  description={site.description}
+                  link={site.link}
+                />
+              }
+            />
+          );
+        })}
+        <Route path="*" element={<NoPage />} />
+      </Route>
+    </Routes>
   );
 }
 
