@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: 38px;
+  font-size: 20px;
   @include font;
 }
 
@@ -13,4 +13,11 @@ html {
   min-height: 100vh;
   min-width: 100vw;
   @include flexCenter;
+}
+
+//link reset
+a {
+  color: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
 }

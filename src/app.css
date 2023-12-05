@@ -6,7 +6,7 @@
 }
 
 html {
-  font-size: 38px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -16,4 +16,54 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 90%;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.grid-item {
+  padding: 10%;
+  flex-direction: column;
+}
+
+.main-display {
+  text-align: left;
+}
+
+.sites-list {
+  text-align: right;
+}
+
+@media only screen and (orientation: landscape) {
+  .grid-container {
+    grid-template-columns: 50% 50%;
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-left {
+  font-size: 3rem;
+}
+
+.nav-right {
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-right a {
+  margin: 14% 20%;
 }/*# sourceMappingURL=app.css.map */

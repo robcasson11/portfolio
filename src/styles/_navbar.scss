@@ -1,0 +1,18 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-left {
+  font-size: 3rem;
+}
+
+.nav-right {
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-right a {
+  margin: 14% 20%;
+}

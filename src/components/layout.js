@@ -7,9 +7,15 @@ const Layout = () => {
   return (
     <>
       <Navbar />
-      <Outlet />
-      <SitesList />
-      <Link to={"/"}>Home</Link>
+      <main class="grid-container" id="grid-container">
+        <section className="main-display grid-item" id="main-display">
+          <Outlet />
+        </section>
+        <section className="sites-list grid-item" id="site-list">
+          <SitesList />
+          <Link to={"/"}>Home</Link>
+        </section>
+      </main>
     </>
   );
 };
