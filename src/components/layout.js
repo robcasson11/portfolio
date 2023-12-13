@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <>
       <Navbar />
-      <main class="grid-container" id="grid-container">
+      <main className="grid-container" id="grid-container">
         <section className="main-display grid-item" id="main-display">
           <Outlet />
         </section>

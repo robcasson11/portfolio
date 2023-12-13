@@ -21,7 +21,11 @@ const Navbar = () => {
         >
           <FaGithub />
         </a>
-        <a href="mailto:robertcasson11@gmail.com">
+        <a
+          href="mailto:robertcasson11@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
           <MdEmail />
         </a>
       </section>

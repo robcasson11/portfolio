@@ -27,7 +27,7 @@ a {
 .grid-container {
   display: grid;
   grid-template-columns: 90%;
-  min-height: 100vh;
+  min-height: 90vh;
   align-items: center;
 }
 
@@ -52,6 +52,7 @@ a {
 .navbar {
   display: flex;
   justify-content: space-between;
+  height: 10vh;
 }
 
 .nav-left {

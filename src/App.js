@@ -15,6 +15,7 @@ function App() {
           return (
             <Route
               path={site.path}
+              key={site.id}
               element={
                 <Card
                   title={site.title}
