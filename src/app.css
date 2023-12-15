@@ -6,16 +6,16 @@
 }
 
 html {
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
 
-.page-body {
-  min-height: 100vh;
-  min-width: 100vw;
+body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #374954;
+  color: #b8b8b8;
 }
 
 a {
@@ -27,36 +27,41 @@ a {
 .grid-container {
   display: grid;
   grid-template-columns: 90%;
-  min-height: 90vh;
+  min-height: 80vh;
   align-items: center;
 }
 
 .grid-item {
   padding: 10%;
   flex-direction: column;
-}
-
-.main-display {
-  text-align: left;
-}
-
-.sites-list {
-  text-align: right;
+  border-inline-start: 4px solid;
+  border-block-start: 4px solid;
+  border-image-source: radial-gradient(circle at top left, blue, transparent 50%);
+  border-image-slice: 1;
+  padding: 2%;
+  margin: 5%;
 }
 
 @media only screen and (orientation: landscape) {
   .grid-container {
     grid-template-columns: 50% 50%;
   }
+  .main-display {
+    text-align: left;
+  }
+  .sites-list {
+    text-align: right;
+  }
 }
 .navbar {
   display: flex;
   justify-content: space-between;
-  height: 10vh;
+  min-height: 10vh;
 }
 
 .nav-left {
-  font-size: 3rem;
+  font-size: 6rem;
+  line-height: 0;
 }
 
 .nav-right {

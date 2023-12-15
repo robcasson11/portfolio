@@ -5,14 +5,14 @@
 }
 
 html {
-  font-size: 20px;
+  font-size: 16px;
   @include font;
 }
 
-.page-body {
-  min-height: 100vh;
-  min-width: 100vw;
+body {
   @include flexCenter;
+  background-color: $body-bg;
+  color: $text-color;
 }
 
 //link reset

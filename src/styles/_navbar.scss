@@ -1,11 +1,12 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  height: 10vh;
+  min-height: 10vh;
 }
 
 .nav-left {
-  font-size: 3rem;
+  font-size: 6rem;
+  line-height: 0;
 }
 
 .nav-right {
