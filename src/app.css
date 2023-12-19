@@ -11,9 +11,6 @@ html {
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #374954;
   color: #b8b8b8;
 }
@@ -24,9 +21,19 @@ a {
   text-align: inherit;
 }
 
+h1 {
+  font-size: 3rem;
+  margin-bottom: 6%;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 6%;
+}
+
 .grid-container {
   display: grid;
-  grid-template-columns: 90%;
+  grid-template-columns: 100%;
   min-height: 80vh;
   align-items: center;
 }
@@ -34,20 +41,34 @@ a {
 .grid-item {
   padding: 10%;
   flex-direction: column;
+}
+
+.main-display {
   border-inline-start: 4px solid;
   border-block-start: 4px solid;
-  border-image-source: radial-gradient(circle at top left, blue, transparent 50%);
+  border-image-source: radial-gradient(circle at top left, rgb(107, 107, 197), transparent 40%);
   border-image-slice: 1;
   padding: 2%;
-  margin: 5%;
+  margin: 2%;
+}
+
+.sites-list {
+  border-inline-end: 4px solid;
+  border-block-end: 4px solid;
+  border-image-source: radial-gradient(circle at bottom right, rgb(107, 107, 197), transparent 40%);
+  border-image-slice: 1;
+  padding: 2%;
+  margin: 2%;
 }
 
 @media only screen and (orientation: landscape) {
   .grid-container {
     grid-template-columns: 50% 50%;
+    margin: 0 10%;
   }
   .main-display {
     text-align: left;
+    width: 100%;
   }
   .sites-list {
     text-align: right;
@@ -72,4 +93,70 @@ a {
 
 .nav-right a {
   margin: 14% 20%;
+}
+
+@media only screen and (orientation: landscape) {
+  .navbar {
+    margin: 2% 10% 0 10%;
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: #49606e;
+  overflow: hidden;
+}
+
+.card p,
+.card h2,
+.card h3 {
+  padding: 2%;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2%;
+}
+
+.card a:link,
+.card a:visited {
+  flex: 1 1 0px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  background-color: #b8b8b8;
+  color: white;
+  padding: 1px 1px;
+  margin: 3%;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+}
+
+.card a:active {
+  background-color: rgb(44, 51, 96);
+}
+
+.card img {
+  width: 60%;
+  align-self: center;
+}
+
+@media only screen and (orientation: landscape) {
+  .card {
+    width: 60%;
+  }
+  .card img {
+    width: 100%;
+  }
+  .card a:hover {
+    background-color: rgb(44, 51, 96);
+  }
+  .card a:hover {
+    transform: scale(1.1);
+  }
 }/*# sourceMappingURL=app.css.map */

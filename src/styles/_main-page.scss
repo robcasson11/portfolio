@@ -1,6 +1,6 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 90%;
+  grid-template-columns: 100%;
   min-height: 80vh;
   align-items: center;
 }
@@ -8,25 +8,43 @@
 .grid-item {
   padding: 10%;
   flex-direction: column;
+}
+
+.main-display {
   border-inline-start: 4px solid;
   border-block-start: 4px solid;
   border-image-source: radial-gradient(
     circle at top left,
-    blue,
-    transparent 50%
+    $border-color,
+    transparent 40%
   );
   border-image-slice: 1;
   padding: 2%;
-  margin: 5%;
+  margin: 2%;
+}
+
+.sites-list {
+  border-inline-end: 4px solid;
+  border-block-end: 4px solid;
+  border-image-source: radial-gradient(
+    circle at bottom right,
+    $border-color,
+    transparent 40%
+  );
+  border-image-slice: 1;
+  padding: 2%;
+  margin: 2%;
 }
 
 @include mq {
   .grid-container {
     grid-template-columns: 50% 50%;
+    margin: 0 10%;
   }
 
   .main-display {
     text-align: left;
+    width: 100%;
   }
 
   .sites-list {

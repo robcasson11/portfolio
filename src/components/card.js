@@ -1,12 +1,27 @@
 import React from "react";
 
-const Card = ({ title, description, link }) => {
+const Card = ({ id, title, description, link, image }) => {
   return (
-    <div>
-      <h1>This is the {title} card</h1>
-      <h3>This is the description: {description}</h3>
-      <p>This is the url... {link}</p>
-    </div>
+    <section className="card">
+      <img src={image} alt="Site 1" width="100%" />
+      <h2>{title}</h2>
+
+      <h3>{description}</h3>
+      <div className="links">
+        <a href={link} target="_blank" rel="noreferrer">
+          View Site
+        </a>
+        <button as="a" href={link} target="_blank" rel="noreferrer">
+          View Site
+        </button>
+        <a href="" target="_blank" rel="noreferrer">
+          Frontend Code
+        </a>
+        <a href="" target="_blank" rel="noreferrer">
+          Backend Code
+        </a>
+      </div>
+    </section>
   );
 };
 

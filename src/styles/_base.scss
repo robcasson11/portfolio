@@ -10,7 +10,6 @@ html {
 }
 
 body {
-  @include flexCenter;
   background-color: $body-bg;
   color: $text-color;
 }
@@ -20,4 +19,14 @@ a {
   color: inherit;
   text-decoration: inherit;
   text-align: inherit;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 6%;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 6%;
 }

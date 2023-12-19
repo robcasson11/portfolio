@@ -18,3 +18,9 @@
 .nav-right a {
   margin: 14% 20%;
 }
+
+@include mq {
+  .navbar {
+    margin: 2% 10% 0 10%;
+  }
+}
