@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Card = ({ id, title, description, link, image }) => {
+const Card = ({ title, description, links, image }) => {
   return (
     <section className="card">
       <img src={image} alt="Site 1" width="100%" />
@@ -8,18 +9,18 @@ const Card = ({ id, title, description, link, image }) => {
 
       <h3>{description}</h3>
       <div className="links">
-        <a href={link} target="_blank" rel="noreferrer">
-          View Site
-        </a>
-        <button as="a" href={link} target="_blank" rel="noreferrer">
-          View Site
-        </button>
-        <a href="" target="_blank" rel="noreferrer">
-          Frontend Code
-        </a>
-        <a href="" target="_blank" rel="noreferrer">
-          Backend Code
-        </a>
+        {Object.entries(links).map(([key, value]) => {
+          return (
+            <Link
+              key={key}
+              to={value}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {key}
+            </Link>
+          );
+        })}
       </div>
     </section>
   );

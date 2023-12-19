@@ -18,10 +18,9 @@ function App() {
               key={site.id}
               element={
                 <Card
-                  id={site.id}
                   title={site.title}
                   description={site.description}
-                  link={site.link}
+                  links={site.links}
                   image={site.image}
                 />
               }
