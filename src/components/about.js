@@ -4,10 +4,13 @@ const About = () => {
   return (
     <>
       <h1>Welcome</h1>
+      <h3>Let's build something awesome together.</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus
-        arcu a eleifend fringilla. Nam elementum risus nunc, ac tempor magna
-        auctor ac. Duis tellus sem, luctus eu augue quis.
+        2 years of learning, coding, problem making, problem solving and coffee
+        have led to this, a capable, highly motivated developer with an itch to
+        do more. From beautiful React apps, to REST API's with Node.js, I thrive
+        on tackling complex problems with elegant solutions. Explore my site to
+        see my work, or drop me a line to chat about what we can do together.
       </p>
     </>
   );
