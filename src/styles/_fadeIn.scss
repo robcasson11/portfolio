@@ -1,0 +1,35 @@
+.grid-container {
+  @include fadeIn(200ms);
+}
+
+.navbar {
+  @include fadeIn(400ms);
+}
+
+.card {
+  @include fadeIn(200ms);
+}
+
+img {
+  @include fadeIn(400ms);
+}
+
+h1 {
+  @include fadeIn(600ms);
+}
+
+h2 {
+  @include fadeIn(800ms);
+}
+
+h3 {
+  @include fadeIn(800ms);
+}
+
+.links {
+  @include fadeIn(1000ms);
+}
+
+p {
+  @include fadeIn(800ms);
+}

@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -163,4 +171,39 @@ h3 {
   .card a:hover {
     transform: scale(1.1);
   }
+}
+.grid-container {
+  animation: fadeIn 500ms linear 200ms backwards;
+}
+
+.navbar {
+  animation: fadeIn 500ms linear 400ms backwards;
+}
+
+.card {
+  animation: fadeIn 500ms linear 200ms backwards;
+}
+
+img {
+  animation: fadeIn 500ms linear 400ms backwards;
+}
+
+h1 {
+  animation: fadeIn 500ms linear 600ms backwards;
+}
+
+h2 {
+  animation: fadeIn 500ms linear 800ms backwards;
+}
+
+h3 {
+  animation: fadeIn 500ms linear 800ms backwards;
+}
+
+.links {
+  animation: fadeIn 500ms linear 1000ms backwards;
+}
+
+p {
+  animation: fadeIn 500ms linear 800ms backwards;
 }/*# sourceMappingURL=app.css.map */

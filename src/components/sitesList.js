@@ -1,22 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import sites from "../data/sites_data";
 
 const SitesList = () => {
   return (
     <>
       <h2>Projects</h2>
-      <p>
-        <Link to={`/site1`}>View my first site here</Link>
-      </p>
-      <br />
-      <p>
-        <Link to={`/site2`}>View my second site here</Link>
-      </p>
-      <br />
-      <p>
-        <Link to={`/site3`}>View my third site here</Link>
-      </p>
-      <br />
+      {sites.map((site) => {
+        return (
+          <>
+            <p>
+              <Link key={site.id} to={`/${site.path}`}>
+                {site.title}
+              </Link>
+            </p>
+            <br />
+          </>
+        );
+      })}
     </>
   );
 };
