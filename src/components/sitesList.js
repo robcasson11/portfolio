@@ -8,14 +8,12 @@ const SitesList = () => {
       <h2>Projects</h2>
       {sites.map((site) => {
         return (
-          <>
+          <div key={site.id}>
             <p>
-              <Link key={site.id} to={`/${site.path}`}>
-                {site.title}
-              </Link>
+              <Link to={`/${site.path}`}>{site.title}</Link>
             </p>
             <br />
-          </>
+          </div>
         );
       })}
     </>
