@@ -6,13 +6,8 @@ const SitePage = ({ links }) => {
     <div className="card">
       {Object.entries(links).map(([key, value]) => {
         return (
-          <div className="links-container">
-            <Link
-              key={key}
-              to={value}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div key={key} className="links-container">
+            <Link to={value} target="_blank" rel="noopener noreferrer">
               {key}
             </Link>
           </div>
