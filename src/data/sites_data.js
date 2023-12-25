@@ -3,8 +3,10 @@ const sites = [
     id: 1,
     title: "Login Template",
     image: "Images/cardImage1.jpg",
-    description:
+    cardDescription:
       "A simple, custom login form that can be added to any React project to restrict access via a username and password.",
+    mainDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a ipsum at dolor accumsan placerat vel eget nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec pellentesque nulla elit, vel tristique nibh interdum et. Phasellus id accumsan mauris. Cras eget purus id nunc eleifend suscipit et ut.",
     links: {
       "Deployed Site": "https://login-y15k.onrender.com/",
       "Frontend Code": "https://github.com/robcasson11/auth_template_frontend",

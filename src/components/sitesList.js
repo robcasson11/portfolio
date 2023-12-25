@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import sites from "../data/sites_data";
+import useSiteData from "../hooks/useSiteData";
 
 const SitesList = () => {
+  const [siteData] = useSiteData();
   return (
     <>
       <h2>Projects</h2>
-      {sites.map((site) => {
+      {siteData.map((site) => {
         return (
           <div key={site.id}>
             <p>

@@ -23,7 +23,7 @@ function App() {
                   <Card
                     id={site.id}
                     title={site.title}
-                    description={site.description}
+                    cardDescription={site.cardDescription}
                     links={site.links}
                     image={site.image}
                   />
@@ -32,7 +32,13 @@ function App() {
               <Route
                 key={site.id}
                 path=":id"
-                element={<SitePage links={site.links} />}
+                element={
+                  <SitePage
+                    title={site.title}
+                    links={site.links}
+                    mainDescription={site.mainDescription}
+                  />
+                }
               />
             </Route>
           );

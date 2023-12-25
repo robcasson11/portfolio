@@ -1,6 +1,6 @@
 .card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background: $card-bg;
@@ -8,6 +8,7 @@
 }
 
 .card p,
+.card h1,
 .card h2,
 .card h3 {
   padding: 2%;
@@ -17,23 +18,28 @@
 
 .links-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   margin-bottom: 2%;
+}
+.links-container a {
+  align-self: center;
+}
+
+.sitePage {
+  flex-direction: column;
 }
 
 .card a:link,
 .card a:visited {
-  max-width: 30%;
-  flex: 1 1 0px;
-  font-size: 0.8rem;
+  width: 50%;
   border-radius: 5px;
   background-color: $text-color;
   color: white;
-  padding: 1px 1px;
+  padding: 2% 8%;
   margin: 1%;
-  text-decoration: none;
+  white-space: nowrap;
   text-align: center;
-  justify-content: center;
 }
 
 .card a:active {
@@ -41,13 +47,13 @@
 }
 
 .card img {
-  width: 60%;
+  max-width: 40%;
   align-self: center;
 }
 
 @include mq {
   .card {
-    width: 60%;
+    width: 95%;
   }
   .card img {
     width: 100%;
