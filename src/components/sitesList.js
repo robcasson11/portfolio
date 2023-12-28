@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import useSiteData from "../hooks/useSiteData";
+import { NavLink } from "react-router-dom";
 
 const SitesList = () => {
   const [siteData] = useSiteData();
@@ -11,7 +11,9 @@ const SitesList = () => {
         return (
           <div key={site.id}>
             <p>
-              <Link to={`/${site.path}`}>{site.title}</Link>
+              <NavLink to={`/${site.path}`} activeclassname="active">
+                {site.title}
+              </NavLink>
             </p>
             <br />
           </div>

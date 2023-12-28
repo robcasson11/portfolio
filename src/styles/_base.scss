@@ -23,6 +23,10 @@ a {
   font-size: 1.4rem;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 .navbar a {
   font-size: 3rem;
 }
@@ -61,5 +65,8 @@ h3 {
   button,
   .links-container a {
     font-size: 1rem;
+  }
+  .sites-list a:hover {
+    opacity: 50%;
   }
 }

@@ -19,27 +19,9 @@ function App() {
               <Route
                 path={site.path}
                 key={site.id}
-                element={
-                  <Card
-                    id={site.id}
-                    title={site.title}
-                    cardDescription={site.cardDescription}
-                    links={site.links}
-                    image={site.image}
-                  />
-                }
+                element={<Card site={site} />}
               />
-              <Route
-                key={site.id}
-                path=":id"
-                element={
-                  <SitePage
-                    title={site.title}
-                    links={site.links}
-                    mainDescription={site.mainDescription}
-                  />
-                }
-              />
+              <Route key={site.id} path=":id" element={<SitePage />} />
             </Route>
           );
         })}

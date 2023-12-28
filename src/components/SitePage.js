@@ -1,13 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import useSiteData from "../hooks/useSiteData";
 
-const SitePage = ({ title, mainDescription, links }) => {
+const SitePage = () => {
+  const [siteData] = useSiteData();
+  const { id } = useParams();
+  const foundSite = siteData[id - 1];
   return (
     <section className="card sitePage">
-      <h1>{title}</h1>
-      <p>{mainDescription}</p>
+      <h1>{foundSite.title}</h1>
+      {foundSite.mainDescription}
       <div className="links-container">
-        {Object.entries(links).map(([key, value]) => {
+        {Object.entries(foundSite.links).map(([key, value]) => {
           return (
             <Link
               key={key}

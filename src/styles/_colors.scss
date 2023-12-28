@@ -8,4 +8,6 @@ $box-bg: linear-gradient(
   rgba(119, 255, 255, 1) 48%,
   rgba(1, 240, 255, 1) 100%
 );
-$border-color: rgb(107, 107, 197);
+$border-color: #6b6bc5;
+$underline-color: rgb(255, 255, 255)
+  linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(107, 107, 197, 1) 100%);

@@ -31,6 +31,10 @@ a {
   font-size: 1.4rem;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 .navbar a {
   font-size: 3rem;
 }
@@ -70,6 +74,9 @@ h3 {
   .links-container a {
     font-size: 1rem;
   }
+  .sites-list a:hover {
+    opacity: 50%;
+  }
 }
 .grid-container {
   display: grid;
@@ -86,7 +93,7 @@ h3 {
 .main-display {
   border-inline-start: 4px solid;
   border-block-start: 4px solid;
-  border-image-source: radial-gradient(circle at top left, rgb(107, 107, 197), transparent 40%);
+  border-image-source: radial-gradient(circle at top left, #6b6bc5, transparent 40%);
   border-image-slice: 1;
   padding: 2%;
   margin: 2%;
@@ -95,7 +102,7 @@ h3 {
 .sites-list {
   border-inline-end: 4px solid;
   border-block-end: 4px solid;
-  border-image-source: radial-gradient(circle at bottom right, rgb(107, 107, 197), transparent 40%);
+  border-image-source: radial-gradient(circle at bottom right, #6b6bc5, transparent 40%);
   border-image-slice: 1;
   padding: 2%;
   margin: 2%;
@@ -164,6 +171,7 @@ h3 {
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 2%;
+  min-width: 60%;
 }
 
 .links-container a {

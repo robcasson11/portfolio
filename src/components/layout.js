@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import Navbar from "./navbar";
 import SitesList from "./sitesList";
 
@@ -13,7 +13,9 @@ const Layout = () => {
         </section>
         <section className="sites-list grid-item" id="site-list">
           <SitesList />
-          <Link to={"/"}>Home</Link>
+          <NavLink activeclassname="active" to={"/"}>
+            Home
+          </NavLink>
         </section>
       </main>
     </>
