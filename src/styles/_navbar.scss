@@ -4,13 +4,17 @@
   min-height: 10vh;
 }
 
-.nav-left {
-  font-size: 4rem;
+.nav-left a {
+  font-size: 7rem;
+  line-height: 0;
+}
+
+.nav-right a {
+  font-size: 3.5rem;
   line-height: 0;
 }
 
 .nav-right {
-  font-size: 2rem;
   display: flex;
   justify-content: flex-end;
 }

@@ -35,10 +35,6 @@ a {
   text-decoration: underline;
 }
 
-.navbar a {
-  font-size: 3rem;
-}
-
 button {
   border-width: 0;
   padding: 0.4rem;
@@ -128,13 +124,17 @@ h3 {
   min-height: 10vh;
 }
 
-.nav-left {
-  font-size: 4rem;
+.nav-left a {
+  font-size: 7rem;
+  line-height: 0;
+}
+
+.nav-right a {
+  font-size: 3.5rem;
   line-height: 0;
 }
 
 .nav-right {
-  font-size: 2rem;
   display: flex;
   justify-content: flex-end;
 }
@@ -251,4 +251,9 @@ h3 {
 
 p {
   animation: fadeIn 500ms linear 800ms backwards;
+}
+
+.stack-container {
+  display: flex;
+  flex-direction: row;
 }/*# sourceMappingURL=app.css.map */

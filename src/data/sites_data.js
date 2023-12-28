@@ -40,6 +40,7 @@ const sites = [
       "Frontend Code": "https://github.com/robcasson11/auth_template_frontend",
       "Backend Code": "https://github.com/robcasson11/auth_template_backend",
     },
+    stack: ["React", "NodeJS", "Express", "MongoDB", "HTML", "CSS", "SASS"],
     path: "loginTemplate",
   },
   {
@@ -63,6 +64,7 @@ const sites = [
       </p>
     ),
     links: { "Deployed Site": "http://whattheduckmusic.co.uk" },
+    stack: ["HTML", "CSS", "Javascript"],
     path: "whatTheDuck",
   },
 ];
