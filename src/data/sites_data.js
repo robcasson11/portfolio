@@ -45,6 +45,27 @@ const sites = [
   },
   {
     id: 2,
+    title: "The Platinum Forge",
+    image: "Images/thePlatinumForge.jpg",
+    cardDescription:
+      "Acting as a 'Pallet' to experiment with alongside learning, 'The Platinum Forge' provided a long term goal that required solutions not yet realised. It may be in need of a refactor, however immense pride runs through the accomplishment of this app",
+    mainDescription: (
+      <p>
+        This is an in depth to-do list for a small business that repairs
+        “items”. The "tasks" (or in this case "items") are displayed via feeds.
+        The feeds determine which "items" to display based on either, what it
+        needs, when it needs to be completed, whether it is completed or if it
+        has been collected.
+      </p>
+    ),
+    links: {
+      GitHub: "https://github.com/robcasson11/platinumForge",
+    },
+    stack: ["React", "NodeJS", "Express", "MongoDB", "HTML", "CSS"],
+    path: "platinumForge",
+  },
+  {
+    id: 3,
     title: "What The Duck?!?",
     image: "Images/whatTheDuckImage.jpg",
     cardDescription:
