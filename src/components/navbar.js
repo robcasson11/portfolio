@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="navbar" id="navbar">
       <section className="nav-left">
-        <Link to={"/"}>
+        <Link to={"/about"}>
           <GiAnvil />
         </Link>
       </section>

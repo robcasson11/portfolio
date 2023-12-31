@@ -58,6 +58,14 @@ const sites = [
         has been collected.
       </p>
     ),
+    images: [
+      "Images/1welcomeScreenShot.jpg",
+      "Images/2Form.jpg",
+      "Images/3Dashboard.jpg",
+      "Images/4JobPage.jpg",
+      "Images/5QuotesPage.jpg",
+      "Images/6CollectionsFeed.jpg",
+    ],
     links: {
       GitHub: "https://github.com/robcasson11/platinumForge",
     },

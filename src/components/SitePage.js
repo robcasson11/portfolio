@@ -12,7 +12,7 @@ const SitePage = () => {
       {foundSite.mainDescription}
       <h3>The Stack:</h3>
       <div className="stack-container">
-        {foundSite?.stack.map((stackItem, i) => {
+        {foundSite.stack.map((stackItem, i) => {
           return <p key={i}>{stackItem}</p>;
         })}
       </div>
@@ -27,6 +27,18 @@ const SitePage = () => {
             >
               {key}
             </Link>
+          );
+        })}
+      </div>
+      <div className="images-container">
+        {foundSite.images?.map((image) => {
+          return (
+            <img
+              key={image}
+              src={image}
+              alt={`Screenshot of app ${foundSite.id}`}
+              width="100%"
+            />
           );
         })}
       </div>

@@ -258,6 +258,15 @@ p {
   flex-direction: row;
 }
 
+.images-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.images-container img {
+  max-width: none;
+}
+
 .unauthorised {
   display: flex;
   flex-direction: column;
