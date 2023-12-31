@@ -78,6 +78,7 @@ h3 {
   display: grid;
   grid-template-columns: 100%;
   min-height: 80vh;
+  max-height: 80vh;
   align-items: center;
 }
 
@@ -256,15 +257,6 @@ p {
 .stack-container {
   display: flex;
   flex-direction: row;
-}
-
-.images-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.images-container img {
-  max-width: none;
 }
 
 .unauthorised {

@@ -1,6 +1,5 @@
 const sites = [
   {
-    id: 1,
     title: "Login Template",
     image: "Images/loginTemplateImage.jpg",
     cardDescription:
@@ -44,7 +43,6 @@ const sites = [
     path: "loginTemplate",
   },
   {
-    id: 2,
     title: "The Platinum Forge",
     image: "Images/thePlatinumForge.jpg",
     cardDescription:
@@ -58,14 +56,6 @@ const sites = [
         has been collected.
       </p>
     ),
-    images: [
-      "Images/1welcomeScreenShot.jpg",
-      "Images/2Form.jpg",
-      "Images/3Dashboard.jpg",
-      "Images/4JobPage.jpg",
-      "Images/5QuotesPage.jpg",
-      "Images/6CollectionsFeed.jpg",
-    ],
     links: {
       GitHub: "https://github.com/robcasson11/platinumForge",
     },
@@ -73,7 +63,6 @@ const sites = [
     path: "platinumForge",
   },
   {
-    id: 3,
     title: "What The Duck?!?",
     image: "Images/whatTheDuckImage.jpg",
     cardDescription:
@@ -97,5 +86,9 @@ const sites = [
     path: "whatTheDuck",
   },
 ];
+
+sites.forEach((obj, index) => {
+  obj.id = index;
+});
 
 export default sites;

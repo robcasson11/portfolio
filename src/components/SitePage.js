@@ -5,7 +5,7 @@ import useSiteData from "../hooks/useSiteData";
 const SitePage = () => {
   const [siteData] = useSiteData();
   const { id } = useParams();
-  const foundSite = siteData[id - 1];
+  const foundSite = siteData[id];
   return (
     <section className="card sitePage">
       <h1>{foundSite.title}</h1>
@@ -27,18 +27,6 @@ const SitePage = () => {
             >
               {key}
             </Link>
-          );
-        })}
-      </div>
-      <div className="images-container">
-        {foundSite.images?.map((image) => {
-          return (
-            <img
-              key={image}
-              src={image}
-              alt={`Screenshot of app ${foundSite.id}`}
-              width="100%"
-            />
           );
         })}
       </div>
