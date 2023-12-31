@@ -1,5 +1,17 @@
 const sites = [
   {
+    title: "Portfolio",
+    image: "Images/portfolio.jpg",
+    cardDescription:
+      "Yes, it's the site you are on. That doesn't make it any less special. A portfolio hub to demonstrate my personal ability and my current projects.",
+    mainDescription: <p></p>,
+    links: {
+      GitHub: "https://github.com/robcasson11/portfolio",
+    },
+    stack: ["React", "HTML", "CSS", "SASS"],
+    path: "portfolio",
+  },
+  {
     title: "Login Template",
     image: "Images/loginTemplateImage.jpg",
     cardDescription:
