@@ -13,7 +13,7 @@ const Layout = () => {
         </section>
         <section className="sites-list grid-item" id="site-list">
           <SitesList />
-          <NavLink activeclassname="active" to={"/"}>
+          <NavLink activeclassname="active" to={"/about"}>
             Home
           </NavLink>
         </section>
