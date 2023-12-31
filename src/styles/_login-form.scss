@@ -1,0 +1,27 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-form h1 {
+  font-size: 4rem;
+}
+
+.login-form-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.login-form-inputs input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 8px;
+  color: $text-color;
+}

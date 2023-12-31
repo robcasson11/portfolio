@@ -7,7 +7,7 @@ const Unauthorised = () => {
   const goBack = () => navigate(-1);
 
   return (
-    <section>
+    <section className="unauthorised">
       <p>You are not authorised to see this page</p>
       <button onClick={goBack}>Home</button>
     </section>

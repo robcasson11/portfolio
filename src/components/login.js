@@ -66,7 +66,7 @@ const Login = () => {
   };
 
   return (
-    <section className="login_form">
+    <section className="login-form">
       <p
         ref={errRef}
         className={errMsg ? "errmsg" : "offscreen"}
@@ -75,7 +75,7 @@ const Login = () => {
         {errMsg}
       </p>
       <h1>Sign In</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="login-form-inputs">
         <label htmlFor="username">Username:</label>
         <input
           type="text"
