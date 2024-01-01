@@ -4,7 +4,29 @@ const sites = [
     image: "Images/portfolio.jpg",
     cardDescription:
       "Yes, it's the site you are on. That doesn't make it any less special. A portfolio hub to demonstrate my personal ability and my current projects.",
-    mainDescription: <p></p>,
+    mainDescription: (
+      <p>
+        Throughout learning I have used libraries like bootstrap and MUI for
+        layout and styling, packages like lodash for utilities and oAuth for
+        authentication. As an early developer however, the approach taken to
+        build this portfolio was aimed more at learning fundamentals as opposed
+        to abstracting complex problems with 3rd party methods.
+        <br />
+        <br />
+        The code may seem convoluted at times, but an emphasis on learning “why”
+        instead of “easiest way” has been applied to this portfolio project. The
+        authentication is handled with custom code that might not be safe to use
+        on an app that uses private data, but has provided a vast challenge with
+        aspects of learning that otherwise would have been overlooked.
+        <br />
+        <br />
+        Logging in with the username of “Viewer” is handled by the same backend
+        API created for the “Login Template” listed in the projects. However,
+        the “Visitor” is the only user who is authorised to view this portfolio.
+        The “Admin” or “Visitor” users are unauthorised. The same goes for the
+        “Login Template”, which the “Viewer” does not have access to.
+      </p>
+    ),
     links: {
       GitHub: "https://github.com/robcasson11/portfolio",
     },
