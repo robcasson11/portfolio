@@ -13,13 +13,6 @@ const sites = [
         to abstracting complex problems with 3rd party methods.
         <br />
         <br />
-        The code may seem convoluted at times, but an emphasis on learning “why”
-        instead of “easiest way” has been applied to this portfolio project. The
-        authentication is handled with custom code that might not be safe to use
-        on an app that uses private data, but has provided a vast challenge with
-        aspects of learning that otherwise would have been overlooked.
-        <br />
-        <br />
         Logging in with the username of “Viewer” is handled by the same backend
         API created for the “Login Template” listed in the projects. However,
         the “Visitor” is the only user who is authorised to view this portfolio.
@@ -80,7 +73,7 @@ const sites = [
     title: "The Platinum Forge",
     image: "Images/thePlatinumForge.jpg",
     cardDescription:
-      "Acting as a 'Pallet' to experiment with alongside learning, 'The Platinum Forge' provided a long term goal that required solutions not yet realised. It may be in need of a refactor, however immense pride runs through the accomplishment of this app",
+      "Acting as a 'Pallet' to experiment with alongside learning, 'The Platinum Forge' provided a long term goal with problems that forced a more in-depth approach to learning. It may be in need of a refactor, however immense pride runs through the accomplishment of this app",
     mainDescription: (
       <p>
         This is an in depth to-do list for a small business that repairs
@@ -88,6 +81,10 @@ const sites = [
         The feeds determine which "items" to display based on either, what it
         needs, when it needs to be completed, whether it is completed or if it
         has been collected.
+        <br />
+        <br />
+        Images of the working application can be viewed in the README on the
+        github page.
       </p>
     ),
     links: {
@@ -110,9 +107,7 @@ const sites = [
         <br />
         It shouldn't be a challenge for a developer to create using the basic
         tools. This site is built from html, css and a tiny bit of javascript.
-        This serves the purpose and proves that frameworks and libraries aren't
-        always required. Sometimes it's nice to remember where it all came from
-        and do some grass-roots coding.
+        Sometimes it's nice to get on with some grass-roots coding.
       </p>
     ),
     links: { "Deployed Site": "http://whattheduckmusic.co.uk" },
