@@ -17,6 +17,7 @@ const Login = () => {
   const [user, setUser] = useState("");
   const [pwd, setPwd] = useState("");
   const [errMsg, setErrMsg] = useState("");
+  const [slowServerMsg, setSlowServerMsg] = useState("");
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -25,16 +26,17 @@ const Login = () => {
 
   useEffect(() => {
     setErrMsg("");
+    setSlowServerMsg("");
   }, [user, pwd]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    if (errMsg !== "") {
-      setTimeout(() => {
-        setErrMsg("Slow server response. Please wait or refresh the page.");
-      }, 5000);
-    }
+    setTimeout(() => {
+      setSlowServerMsg(
+        "Slow server response. Please wait or refresh the page."
+      );
+    }, 5000);
 
     try {
       const response = await axios.post(
@@ -54,10 +56,13 @@ const Login = () => {
     } catch (err) {
       if (!err?.response) {
         setErrMsg("No server response");
+        setLoading(false);
       } else if (err.response?.status === 400) {
         setErrMsg("Missing Username or Password");
+        setLoading(false);
       } else if (err.response?.status === 401) {
         setErrMsg("Username or Password incorrect");
+        setLoading(false);
       } else {
         setErrMsg("Login Failed");
       }
@@ -67,12 +72,8 @@ const Login = () => {
 
   return (
     <section className="login-form">
-      <p
-        ref={errRef}
-        className={errMsg ? "errmsg" : "offscreen"}
-        aria-live="assertive"
-      >
-        {errMsg}
+      <p ref={errRef} aria-live="assertive">
+        {errMsg ? errMsg : slowServerMsg}
       </p>
       <h1>Sign In</h1>
       <form onSubmit={handleSubmit} className="login-form-inputs">
@@ -100,7 +101,7 @@ const Login = () => {
             <ClipLoader
               color="rgba(184, 1, 255, 1)"
               loading={loading}
-              size={"0.4rem"}
+              size={"0.8rem"}
               aria-label="Loading Spinner"
             />
           ) : (
