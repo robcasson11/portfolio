@@ -292,4 +292,8 @@ p {
   border-bottom: 1px solid #eee;
   margin-bottom: 8px;
   color: #b8b8b8;
+}
+
+.login-form button {
+  min-width: 3rem;
 }/*# sourceMappingURL=app.css.map */
