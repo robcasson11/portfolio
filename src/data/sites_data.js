@@ -7,17 +7,18 @@ const sites = [
     mainDescription: (
       <p>
         Throughout learning I have used libraries like bootstrap and MUI for
-        layout and styling, packages like lodash for utilities and oAuth for
-        authentication. As an early developer however, the approach taken to
-        build this portfolio was aimed more at learning fundamentals as opposed
-        to abstracting complex problems with 3rd party methods.
+        layout, packages like lodash for utilities and oAuth for authentication.
+        As an early developer however, this portfolio is for the fundamentals.
+        Despite the option of abstracting complex problems with 3rd party
+        methods.
         <br />
         <br />
         Logging in with the username of “Viewer” is handled by the same backend
         API created for the “Login Template” listed in the projects. However,
-        the “Visitor” is the only user who is authorised to view this portfolio.
-        The “Admin” or “Visitor” users are unauthorised. The same goes for the
-        “Login Template”, which the “Viewer” does not have access to.
+        the “Visitor” is the only "user" who is authorised to view this
+        portfolio. The “Admin” or “Visitor” "users" are unauthorised. The same
+        goes for the “Login Template”, which the “Viewer” does not have access
+        to.
       </p>
     ),
     links: {
@@ -105,8 +106,7 @@ const sites = [
         youtube links, email and contact details and other forms of
         media/pictures. <br />
         <br />
-        It shouldn't be a challenge for a developer to create using the basic
-        tools. This site is built from html, css and a tiny bit of javascript.
+        This site is built from html, css and a tiny bit of javascript.
         Sometimes it's nice to get on with some grass-roots coding.
       </p>
     ),
